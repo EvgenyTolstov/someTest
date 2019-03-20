@@ -22,6 +22,7 @@ VOID CatFile(HANDLE hInFile, HANDLE hOutFile)
 
 int main(int argc, char *argv[])
 {
+	// !!!
 	LPBOOL s;
 	DWORD FileIndex = Options(argc, argv, "s", &s);
 	HANDLE hInFile = CreateFile(argv[FileIndex], GENERIC_READ, NULL, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
